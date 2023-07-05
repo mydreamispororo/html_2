@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 800px;
+        }
+        tr {
+            height: 50px;
+        }
+        td {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <!-- 셀(td) 합치기 : 가로(colspan), 새로(rowspan) -->
+    <table>
+        <tr>
+            <td rowspan="3">1</td>
+            <td colspan="2">2</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td colspan="5">14</td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+    <br>
+
+    주소 : 우편번호, 주소1, 상세주소
+
+    <table>
+        <tr>
+            <td rowspan="3">주소</td>
+            <td>우편번호</td>
+        </tr>
+        <tr>
+            <td>주소1</td>
+        </tr>
+        <tr>
+            <td>주소2</td>
+        </tr>
+    </table>
+</body>
+</html>

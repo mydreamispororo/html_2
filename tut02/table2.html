@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .table-wrap {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        tr {
+            height: 80px;
+        }
+
+        tr:nth-child(1) {
+            background-color: #6a6a6a;
+            color: #fff;
+
+        }
+
+        tr:nth-child(even) {
+            background-color: #f7f7f7;
+
+        }
+
+
+        td {
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        tr:last-child {
+            font-weight: 700;
+            background-color: #6a6a6a;
+        }
+    </style>
+</head>
+<body>
+    <div class="table-wrap">
+    <table>
+        <thead>
+        <tr>
+            <th>Date.</th>
+            <th>Order ID</th>
+            <th>Name.</th>
+            <th>Price.</th>
+            <th>Quantity</th>
+            <th>Total</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td rowspan="3">2023.05.20</td>
+            <td>Korea3</td>
+            <td>코리아아이티3</td>
+            <td>50000</td>
+            <td>50</td>
+            <td>2500000</td>
+        </tr>
+        <tr>
+            <td>Korea3</td>
+            <td>코리아아이티3</td>
+            <td>50000</td>
+            <td>50</td>
+            <td>2500000</td>
+        </tr>
+        <tr>
+            <td>Korea3</td>
+            <td>코리아아이티3</td>
+            <td>50000</td>
+            <td>50</td>
+            <td>2500000</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="3">합계</td>
+            <td>150000</td>
+            <td>150</td>
+            <td>10000000</td>
+        </tr>
+        </tfoot>
+    </table>
+    </div>
+</body>
+</html>

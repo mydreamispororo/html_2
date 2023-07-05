@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table 속성</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .wrapper {
+            width: 1400px;
+            /* text-align: center; */
+            margin: 0 auto;
+        }
+
+        table {
+            width: 100%;
+            /* 테이블 선 간격 없애기 */
+            border-collapse: collapse;
+        }
+
+        tr {
+            height: 50px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #e7e7e7;
+
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+        }
+
+        th:nth-child(1) {
+            width: 10%;
+        }
+
+        th:nth-child(2) {
+            width: 10%;
+        }
+
+        th:nth-child(3) {
+            width: 10%;
+        }
+
+        th:nth-child(4) {
+            width: 10%;
+        }
+
+        th:nth-child(5) {
+            width: 10%;
+        }
+
+        th:nth-child(6) {
+            width: 15%;
+        }
+
+        /* 나머지 남는 간격은 넓이 값 안 준 번호로 */
+
+        tr:nth-child(even):hover {
+            background-color: #f7f7f7;
+            cursor: pointer;
+        }
+
+        button {
+            font-family: 'Roboto', sans-serif;
+            padding: 6px 10px;
+            border: 1px solid #ccc;
+            background-color: #eee;
+        }
+
+        button:hover {
+            background-color: pink;
+            cursor: pointer;
+        }
+
+        .search-wrap {
+            display: flex;
+            justify-content: right;
+            margin-bottom: 2px;
+        }
+        .search-wrap input{
+            width: 150px;
+            border: 1px solid #e7e7e7;
+            outline: 0;
+            padding: 8px 4px;
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- table > (thead) (tbody) (tfoot) > tr(줄), th(칸 : 진하게), td(칸) -->
+    <div class="wrapper">
+        <!-- 검색 폼 -->
+        <div class="search-wrap">
+            <form action="" method="post">
+                <input type="search" name="" id="" class="search"><BUtton class="btn">검색</BUtton>
+            </form>
+        </div>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Suabject</th>
+                <th>Writer</th>
+                <th>Regdate</th>
+                <th>Visit</th>
+                <th>-</th>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>게시판 테스트입니다.</td>
+                <td>홍길동</td>
+                <td>2023.05.14</td>
+                <td>1</td>
+                <td>
+                    <button><i class="fa-solid fa-pen-to-square">Update</i></button>
+                    <i class="fa-solid fa-slash"></i>
+                    <button><i class="fa-regular fa-trash-can">Delete</i></button>
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>공지사항입니다.</td>
+                <td>관리자</td>
+                <td>2023.05.15</td>
+                <td>100</td>
+                <td>
+                    <button><i class="fa-solid fa-pen-to-square">Update</i></button>
+                    <i class="fa-solid fa-slash"></i>
+                    <button><i class="fa-regular fa-trash-can">Delete</i></button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="js/search.js"></script>
+</body>
+
+</html>

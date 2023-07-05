@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .content {
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            
+            box-shadow: 3px 2px 5px #ccc;
+        }
+
+        h6 {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 12px;
+            /* 1.5 ~ 1.7 */
+            line-height: 1.7; /* 단위 X */
+
+            /* 현재 글자 크기에 따라 다를 수 있음(절대값) */
+            /* line-height: 20PX; */
+            
+            
+        }
+
+        /* 인라인 타입 : img, span, a, form(label, input, button)... */
+        span {
+            font-size: 12px;
+            font-weight: 700;
+            text-decoration: underline;
+            color: tomato;  
+        }
+
+        .detail-wrap {
+            display: flex;
+            justify-content: right;
+
+            
+        }
+
+        
+       
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h6>IT Basic</h6>
+        <h3>기초 코딩</h3>
+        <p>응용소프트웨어 <strong><em><mark>프로그램</mark></em></strong> 중 기본이 되는 언어를 학습하는 과정입니다.</p>
+        <div class="detail-wrap">
+            <span>자세히 보기</span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 페이지 환경설정 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 이부분 안넣어주면 동작 안하는 경우가 있음 -->
+    <title>Document</title>
+    <style>
+        article {
+            width: 100%;
+            height: 500px;
+        }
+
+        /* article:nth-child(odd) {
+            background-color: #ccc;
+        } */
+
+        hr {
+            border: 0;
+            border-bottom: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <!-- h n : h1 ~ h6 -> 중요한 글자 * 중요한 이미지를 강조해야 할 때
+    로고(h1)
+    사이트 제목(h2)
+    사이트 소제목(h3)
+
+    p : 긴 문장을 사용할 때 but 짧은 단어 : label(테이블), span
+    <p>코리아 아이티 아카데미에 오신 걸 환영합니다.</p>
+    <label>코리아아이티</label>
+    <input type="text">
+    
+    <span>코리아아이티</span>
+
+    br : break -> <br> 줄바꿈
+    <span>코리아아이티<br>아카데미</span>
+    
+    hr : 수평선 -> 단락과 단락을 구분할 때 -->
+
+    <main>
+        <section>
+            <article class="arl">내용1</article>
+            <hr>    
+            <article class="arl">내용2</article>
+            <hr>
+            <article class="arl">내용3</article>
+        </section>
+        내용1
+        내용2
+        내용3
+    </main>
+
+
+    
+
+</body>
+</html>

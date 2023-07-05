@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트 관련 예제</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box1 {
+            border: 1px solid #eee;
+            width: 400px;
+            padding: 12px 8px; /*아래위, 좌우*/
+            margin-bottom: 40px;
+        }
+
+        .box1 p {
+            line-height: 1.2; /*그냥 사용 배수, 값px : 줄 간격*/
+        }
+
+        .box1 h2 {
+            margin-bottom: 20px;
+        }
+
+        span {
+            /* font-weight: 700; 글씨체 진하게 100 ~ 900*/
+            font-weight: bold; /*이걸 더 많이 사용함*/
+        }
+    </style>
+</head>
+<body>
+    <!-- h1,h2,h3,h4,h5,h6 : 강조해야 되는 내용 : 기본적으로 진하게 -->
+    <h1>회사이름 : 코리아아이티</h1>
+    <h1><img src="../images/cat.png" /></h1>
+
+    <!-- p : 글자를 많이 적어야 할 때, 2줄 개행, br(1줄 개행) -->
+    <div class="box1">
+        <h2>Userid</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione placeat alias repellendus vero perferendis sequi ipsa ullam, fugiat fuga consequuntur!</p>
+    </div>
+    <br>
+    <br>
+    <div>코리아아이티</div>
+    
+    웹표준 사이트 개발
+    <span>강조3</span>
+    <strong>강조1</strong> <!-- 글자 진하게 나옴 : 강조 -->
+    <b>강조2</b> <!-- 글자 진하게 나옴 : 강조 -->
+
+    <p class="hero"><strong>코리아아이티 아카데미</strong> 메인페이지 히어로 이미지</p>
+    <p class="hero"><mark>코리아아이티</mark></p> <!-- 형광펜 -->
+
+    span 글자를 표시할 때 또는 메뉴
+    <span>메뉴1</span>
+    <span>메뉴2</span>
+    <span>메뉴3</span>
+    <form>
+        <label>아이디</label>
+        <input />
+
+    </form>
+
+    <span>코리아아이티</span>
+</body>
+</html>

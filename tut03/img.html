@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img-wrap {
+            width: 500px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        img:hover {
+            transform: scale(1.5);
+            transition: 0.5s;
+        }
+
+        .bg-wrpa {
+            background-image: url(/images/chicken.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 600px;
+        }
+
+        .bg-flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* 부모의 높이값을 동등하게 적용해야 세로 정렬이 가능 */
+            height: 600px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- *** 이미지 감싸는 사각형에 가로, 세로 크기를 설정해서 사용
+    이미지는 넓이는 width=100% 로 사용
+    이미지 img(인라인 타입) : 이미지 위로 글자x(position 사용하면 가능)
+    배경이미지 div(블록타입) : 배경이미지 위로는 글자 가능 -->
+
+    <!-- alt 이미지가 보이지 않을 때 나타내는 글자 -->
+    <div>
+        <img src="/images/cat.png" alt="고양이">
+    </div>
+    <br> <br> <br>
+    <div class="bg-wrpa"></div>
+        <div class="bg-flex">
+
+            <div class="bg-text">
+            배경이미지 위로 보이는 글자
+            </div>
+
+        </div>
+    </div>
+    
+
+</body>
+</html>

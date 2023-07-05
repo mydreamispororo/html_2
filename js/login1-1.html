@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- html -->
+    <form method="post" name="frm" action="http://www.naver.com" onsubmit="return loginCheck()">
+        <label>Userid</label>
+        <input type="text" name="userid" id="userid" class="userid" placeholder="아이디를 입력해 주세요"><br />
+        <label>Passward</label>
+        <input type="password" name="passwd" id="passwd" class="passwd" placeholder="비밀번호를 입력해 주세요"><br />
+        <input type="submit" name="sbt" value="Login"/><br />
+        <input type="checkbox" checked /> 아이디 저장
+
+    </form>
+
+    <!-- javascript -->
+    <script>
+        var userid = document.getElementById("userid");
+        var userid = document.getElementById("passwd");
+        var uid = document.getElementsByClassName("userid");
+        var pwd = document.getElementsByClassName("passwd");
+
+        //queryselector
+        //id
+        // let id1 = document.querySelector("userid");
+
+        //class
+        // let id2 = document.querySelector(".userid");
+
+        /*
+        function loginCheck() {
+            if(document.frm.userid.value == "") {
+                alert("아이디를 넣어주세요.");
+                document.frm.userid.focus();
+                return false;
+            }
+
+            if(document.frm.passwd.value == "") {
+                alert("비밀번호를 넣어주세요.");
+                document.frm.passwd.focus();
+                return false;
+            }
+
+            alert("로그인 페이지로 이동합니다.");
+        }
+        */
+    </script>
+</body>
+</html>

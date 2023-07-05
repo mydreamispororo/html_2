@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background 이미지 위에 + 텍스트 박스</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .hero {
+            /* 가로 세로 크기 설정을 해야 이미지가 보임 */
+            background-image: url('./images/h1.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 600px;
+
+            display: flex;
+            justify-content: center; /*사각형 가로정렬*/
+            align-items: center; /*사각형 세로정렬*/
+        }
+
+        .hero section {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 80px 30px;
+            width: 800px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .hero section h1 {
+            font-size: 50px;
+        }
+
+        .contents {
+            font-size: 14px;
+            color : rgba(0, 0, 0, 0.5);
+            margin-top: 10px;
+        }
+
+        .btn-wrap {
+            display: flex;
+            justify-content: center; /*버튼 가운데로 정렬함*/
+            margin-top: 30px;
+        }
+        
+        .btn-wrap button {
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            border: 1px solid #2fa8e0; /*버튼 모서리 선*/
+            background-color: #9e8df3;
+            padding: 5px 20px; /*버튼 크기*/
+            cursor: pointer; /*마우스 가져다 대면 손가락 표시*/
+        }
+
+        .btn-wrap button:hover {
+            background-color: rgba(227, 240, 89, 0.9); /*마우스 가져다 대면 색상 변경*/
+            transition: 0.5s;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- 배경이미지(hero) : 사각형 + css이미지설정(6개) -->
+    <div class="hero">
+        <section>
+            <p class="subtitle">숫자 1도 모르는 당신이 IT전문가</p>
+            <h1>IT 취업은 코리아아이티 아카데미</h1>
+            <p class="contents">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, inventore! Quam ipsum sapiente totam at neque quia dicta pariatur cum.</p>
+            <div class="btn-wrap">
+                <button class="hero-btn">Click!</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
